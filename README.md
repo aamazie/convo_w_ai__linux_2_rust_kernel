@@ -1,5 +1,7 @@
 # convo_w_ai__linux_2_rust_kernel
 
+Maze Kernel Code . Bash code for C to Rust Kernel Conversion
+
 Bash code. Translate C Linux kernel to Rust for security.
 
 This the full a conversation i had with chatgpt .. asked about converting Rust's C kernel to a Rust one....

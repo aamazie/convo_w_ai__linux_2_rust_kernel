@@ -4,6 +4,16 @@ Maze Kernel Code . Bash code for C to Rust Kernel Conversion
 
 Bash code. Translate C Linux kernel to Rust for security.
 
+The minimum requirements for Rust toolchains targeting Linux will increase with the Rust 1.64.0 release (slated for September 22nd, 2022). The new minimum requirements are:
+
+glibc >= 2.17 (previously glibc >= 2.11)
+kernel >= 3.2 (previously kernel >= 2.6.32)
+
+
+Please review your system's requirements before implementing Rust conversion.
+
+
+
 This the full a conversation i had with chatgpt .. asked about converting Rust's C kernel to a Rust one....
 
 

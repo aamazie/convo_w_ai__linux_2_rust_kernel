@@ -13,7 +13,10 @@ export CFLAGS="-O2"
 export LDFLAGS="-L/usr/local/lib"
 export CPPFLAGS="-I/usr/local/include"
 
-# Configure the kernel to enable Rust support, may need dependencies like flex, bison, etc, depending on your server environment
+# Configure the kernel to enable Rust support, may need dependencies like flex, bison, etc, depending on your server environment.
+#There will be a ton of specs to know, so if you want to know your server processor, you can run:
+#lscpu
+
 make oldconfig
 # the make will ask if you want to also compile drivers which will not load.. say n if unsure.
 # Will ask which kernel compression mode, 1, Gzip is default..

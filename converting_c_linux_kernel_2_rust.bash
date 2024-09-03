@@ -1,6 +1,6 @@
 # Clone the Linux kernel repository
-# making with oldconfig, but you can do defconfig as well for a new configuration. 
-# defconfig will generate a default configuration file. can specify a particular target, e.g., x86_64_defconfig for x86_64 architecture.
+# Making with oldconfig, but you can do defconfig as well for a new configuration. 
+# Defconfig will generate a default configuration file. can specify a particular target, e.g., x86_64_defconfig for x86_64 architecture.
 
 git clone --depth=1 https://github.com/Rust-for-Linux/linux.git maze-kernel
 cd maze-kernel
@@ -18,8 +18,9 @@ export CPPFLAGS="-I/usr/local/include"
 # There will be a ton of specs to know, so if you want to know your server processor, you can run:
 # lscpu
 
+# This will allow full customization of the config:
 make oldconfig
-# or, to automatically set all options to default, run
+# Or, to automatically set all options to default, run
 yes "" | make oldconfig
 
 # Otherwise, configure kernel as you see fit and answer prompts.

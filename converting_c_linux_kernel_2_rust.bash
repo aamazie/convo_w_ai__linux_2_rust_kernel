@@ -14,7 +14,7 @@ export CFLAGS="-O2"
 export LDFLAGS="-L/usr/local/lib"
 export CPPFLAGS="-I/usr/local/include"
 
-# Configure the kernel to enable Rust support, may need dependencies like flex, bison, etc, depending on your server environment.
+# Configure the kernel to enable Rust support, may need dependencies like flex, bison, libelf, etc, depending on your server environment.
 # There will be a ton of specs to know, so if you want to know your server processor, you can run:
 # lscpu
 
@@ -23,7 +23,7 @@ make oldconfig
 yes "" | make oldconfig
 
 # Otherwise, configure kernel as you see fit and answer prompts.
-# Knowing what your configuration needs are will greatly lessen your burden when installing dependencies.
+# DISCLAIMER: Knowing what your configuration needs are will greatly lessen your burden when installing dependencies.
 
 # Compile the kernel with Rust components
 make -j$(nproc) 

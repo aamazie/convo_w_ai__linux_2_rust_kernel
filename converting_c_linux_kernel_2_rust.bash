@@ -16,8 +16,8 @@ export CPPFLAGS="-I/usr/local/include"
 # Configure the kernel to enable Rust support, may need dependencies like flex, bison, etc, depending on your server environment
 make oldconfig
 # the make will ask if you want to also compile drivers which will not load.. say n if unsure.
-# will ask which kernel compression mode, Gzip is default.
-# Navigate to 'Kernel hacking' -> 'Rust support'
+# Will ask which kernel compression mode, 1, Gzip is default..
+# Configure kernel as you see fit and answer prompts.
 
 # Compile the kernel with Rust components
 make -j$(nproc) 

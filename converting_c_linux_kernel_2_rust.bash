@@ -22,6 +22,7 @@ make oldconfig
 yes "" | make oldconfig
 
 # Otherwise, configure kernel as you see fit and answer prompts.
+#Knowing what your configuration needs are will greatly lessen your burden when installing dependencies.
 
 # Compile the kernel with Rust components
 make -j$(nproc) 

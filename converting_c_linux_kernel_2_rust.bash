@@ -18,9 +18,10 @@ export CPPFLAGS="-I/usr/local/include"
 #lscpu
 
 make oldconfig
-# the make will ask if you want to also compile drivers which will not load.. say n if unsure.
-# Will ask which kernel compression mode, 1, Gzip is default..
-# Configure kernel as you see fit and answer prompts.
+#or, to automatically set all options to default, run
+yes "" | make oldconfig
+
+# Otherwise, configure kernel as you see fit and answer prompts.
 
 # Compile the kernel with Rust components
 make -j$(nproc) 

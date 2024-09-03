@@ -15,6 +15,7 @@ export CPPFLAGS="-I/usr/local/include"
 
 # Configure the kernel to enable Rust support, may need dependencies like flex, bison, etc, depending on your server environment
 make oldconfig
+# the make will ask if you want to also compile drivers which will not load.. say m if unsure.
 # Navigate to 'Kernel hacking' -> 'Rust support'
 
 # Compile the kernel with Rust components

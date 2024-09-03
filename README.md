@@ -1,4 +1,4 @@
-# convo_w_ai__linux_2_rust_kernel
+# c_linux_2_rust_kernel
 
 Maze Kernel Code . Bash code for C to Rust Kernel Conversion
 

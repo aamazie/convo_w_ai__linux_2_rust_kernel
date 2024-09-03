@@ -1,5 +1,5 @@
 # Clone the Linux kernel repository
-git clone https://github.com/torvalds/linux.git maze-kernel
+git clone --depth=1 https://github.com/torvalds/linux.git maze-kernel
 cd maze-kernel
 
 # Apply Rust for Linux patches
